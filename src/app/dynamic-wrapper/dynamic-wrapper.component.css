@@ -1,0 +1,31 @@
+/* Basic button styling */
+.my-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff; /* white text */
+    background-color: #fd8420; /* your chosen color */
+    border: none;
+    border-radius: 4px; /* rounded corners */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* transition for hover effect */
+    text-align: center;
+    text-decoration: none;
+    outline: none; /* remove default outline */
+}
+
+/* Hover effect */
+.my-button:hover {
+    background-color: #e5701a; /* a slightly darker shade of the color */
+}
+
+/* Active (pressed) effect */
+.my-button:active {
+    background-color: #cc5d15; /* an even darker shade of the color */
+}
+
+/* Optional: Disable state styling */
+.my-button:disabled {
+    background-color: #c0c0c0; /* gray background */
+    cursor: not-allowed; /* change cursor */
+}

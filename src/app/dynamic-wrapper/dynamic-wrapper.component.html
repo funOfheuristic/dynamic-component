@@ -1,0 +1,11 @@
+<div style="display: grid; place-items: center">
+  <h1>Load Components Dynamically</h1>
+  <div style="display: flex; gap: 20px">
+    <div *ngFor="let component of dynamicComponents">
+      <button class="my-button" (click)="loadComponent(component)">
+        {{ component?.data?.name }}
+      </button>
+    </div>
+  </div>
+  <ng-template dcWrapper></ng-template>
+</div>
